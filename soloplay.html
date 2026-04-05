@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into the Wilds</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/cssdarkmode.css">
+</head>
+<body>
+    <div id="header"></div>
+
+	<!-- Storytelling -->
+	<div class="infobox">
+		<button type="button" class="collapsible"><h2>Storytelling</h2></button>
+		<div class="collapseDescription">
+			This is the foundation of this system, based on <a href="https://homebrewery.naturalcrit.com/share/rkmo0t9k4Q" target="_blank">the Madey Upey Namey Emulator</a>, the tools provided here make up the basis of roleplay, exploration, and mystery.
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+			<h2>Making plot points</h2>
+				<div>
+					<h3>Portent Generator</h3>
+					<div>
+						<div class="annot">From <a href="https://homebrewery.naturalcrit.com/share/rkmo0t9k4Q" target="_blank">The Madey Upey Namey Emulator</a></div>
+					</div>
+					<div class="infobox">
+						The portent generator gives a list of random words which you can use as a basis for certain events. For instance, lets say you ask an NPC, "What quests are there around?" and the Portent Generator gives you "examination" and "slice." Here, you could interpret as they need a surgeon or medical proffessional to perform surgery to figure out what's been going on in the town. So, you undertake the task, and what you find: "coal" and "atmosphere" according to the Portent Generator. Alright, so you could interpret that as the town's local coal mining has been polluting the local atmosphere and giving people horrible lung issues. This is just one use of this system, and its only limited by your imagination! Of course, there are some prompts that might just stump you of how to integrate, and if that happens, thats ok, just roll again! Of course, always try to make some sense of it, but if what you find after doing surgery is a conversation, well, roll again!
+						<br><br>
+						How to use:
+						<br>
+						Simply type in the amount of words you'd like the Portent Generator to generate (I'd suggest 2,) and press generate! Simple as simple.
+					</div>
+					<div class="infobox">
+						<input type="number" name="Count" min="1" max="5"><button type="button" class="portent">Generate Portent</button> <div class="tableText"></div>
+					</div>
+
+					<h3>Oracle</h3>
+					<div>
+						<div class="annot">From <a href="https://homebrewery.naturalcrit.com/share/rkmo0t9k4Q" target="_blank">The Madey Upey Namey Emulator</a></div>
+					</div>
+					<div class="infobox">
+						Adding onto the portent generator is the Oracle, which, when you are asking yes or no questions, can answer them for you, and even add onto them!
+						<br><br>
+						Simply press generate, and it'll output its response.
+						<br><br>
+						<button type="button" class="tableButton">Generate Answer</button> <div class="tableText"></div>
+						<table border="1" class="table">
+							<tr>
+								<th>d6</th>
+								<th>Answer</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>No, and...</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>No.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>No, but...</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Yes, but...</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Yes.</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Yes, and...</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CHALLENGES -->
+	<div class="infobox">
+		<button type="button" class="collapsible"><h2>Challenges</h2></button>
+		<div class="collapseDescription">
+			This comprises how to run any type of challenge, be it skill check, trap, puzzle, roleplay and of course, combat!
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>Skill Check DC</h3>
+				<div class="annot">From <a href="https://www.dndbeyond.com/sources/dnd/dmg-2024?srsltid=AfmBOoqXxrPVVnbZCThlHup2Mr9_fkDgFecfq0LhR9Bsn5EhK2-hPUL-" target="_blank">the Dungeon Master's Guide</a>.</div>
+				<div class="infobox">
+					
+					<br><br>
+					<button type="button" class="tableButton">Generate Random</button> <div class="tableText"></div>
+					<table border="1" class="table">
+						<tr>
+							<th>Difficulty</th>
+							<th>Examples</th>
+							<th>DC</th>
+						</tr>
+						<tr>
+							<td>Easy</td>
+							<td>Lockpicking a house door.</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>Moderate</td>
+							<td>Convincing a guard to let you pass to the castle while under lockdown.</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>Hard</td>
+							<td>Lockpicking the door to the King's Castle.</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<td>Very Hard</td>
+							<td>Lifting a large solid stone gate.</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<td>Impossible</td>
+							<td>Attempting to unravel the seals of an ancient tome that had been locked by a great wizard.</td>
+							<td>30</td>
+						</tr>
+					</table>
+				</div>
+
+				<h3>Traps / Puzzles</h3>
+				<div>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique alias et obcaecati voluptatum reprehenderit, minus dolorem dolores laboriosam, optio doloribus ea magni aliquam nemo earum asperiores recusandae, voluptatem quas natus sunt consequatur repudiandae incidunt itaque nostrum. Quas tempore esse nihil neque animi eaque, laborum a, illum eius iste tenetur non autem ab. Praesentium totam molestiae reprehenderit magnam illo quibusdam quaerat assumenda tenetur odit. Officia accusamus excepturi ullam alias ea ipsam quia. Consectetur pariatur nesciunt aspernatur voluptate, corporis sunt illum nobis, animi dolor quasi aut rerum dicta? Doloremque laudantium distinctio blanditiis itaque, natus eligendi in ullam architecto tempore! Sunt, esse labore.
+				</div>
+
+				<h3>Roleplay</h3>
+				<div>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas natus soluta alias odio praesentium illum enim! Nulla autem aut ducimus, maiores voluptas quos molestias, dolor ab libero neque rerum. Aut nisi voluptate quis qui molestiae, eaque ducimus distinctio quae ex quaerat, commodi magnam aspernatur sapiente consequuntur nam impedit alias deserunt autem facilis reprehenderit quasi optio! Earum repudiandae illo amet excepturi harum cum minima laboriosam hic odio, eligendi eveniet sequi dicta repellendus consequuntur eos, totam modi laudantium eius error porro tenetur omnis perferendis iure? Nihil consectetur doloremque aperiam vel excepturi illo consequatur eaque necessitatibus ducimus perferendis dignissimos reiciendis, voluptate repellat similique?
+				</div>
+
+				<h3>Combat</h3>
+				<div>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur voluptate aliquid ad, libero voluptas odit ab autem dolore? Iste fugiat quam tenetur ipsum praesentium, sed earum pariatur consectetur accusamus vel adipisci. Adipisci quod doloremque, corrupti veniam voluptates dolorum natus similique unde maiores aliquid ut rem esse saepe? At quos ab minus, odit ipsam reiciendis recusandae similique esse nesciunt totam dolorem fugiat rerum dicta dolore aliquam molestiae excepturi est cum delectus. Molestias ut molestiae delectus placeat exercitationem provident, excepturi eius illum? Quasi exercitationem laudantium laborum commodi dicta? Ipsum, autem explicabo. Repudiandae iste adipisci laudantium quos, totam velit delectus explicabo nostrum.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- EXPLORATION -->
+	<div class="infobox">
+		<button type="button" class="collapsible"><h2>Exploration</h2></button>
+		<div class="collapseDescription">
+			This section covers how to use exploration, particularly how to develop certain places and their history as you explore it!
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>General Exploration</h3>
+				<div>
+					For general exploration, just refer to <a href="travel.html">the Travel section of this website</a>, as it provides a host of different methods to really upgrade your travels! All of it works just as well with multiple players as it does solo!
+				</div>
+				<h3>Developing Points of Interest and History</h3>
+				<div>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolores ex voluptatum dolor sed ipsa vel est laudantium enim alias debitis porro consectetur, dicta officiis deserunt consequuntur totam ullam exercitationem pariatur esse in nostrum delectus. Fugiat ad porro, consequuntur animi explicabo nihil id optio earum et culpa corporis sit consequatur voluptates officia quis voluptatum veniam vitae! Quo quidem, similique aspernatur aperiam impedit tenetur ipsam deserunt exercitationem a, consequuntur expedita sapiente quisquam asperiores velit provident placeat ea hic. Explicabo magni commodi tempore molestias aut asperiores ratione reprehenderit dolorum! A maiores fugiat natus odit nihil quas suscipit ratione corrupti nam est? Neque?
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROLEPLAY -->
+	<div class="infobox">
+		<button type="button" class="collapsible"><h2>Roleplay</h2></button>
+		<div class="collapseDescription">
+			This section covers how to play the NPCs of your adventure, including relations, personality, and even secrets!
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>Generating a Random NPC</h3>
+					<div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, natus. Eligendi architecto tenetur officiis quisquam minus laboriosam, nisi porro, illum, consequuntur repudiandae nesciunt fugit vel. Nesciunt officiis dolorum asperiores aperiam illum laborum eaque quae omnis modi quod necessitatibus in doloremque, ipsam pariatur! Dolor magnam tempora maxime vitae, sint, doloribus, laborum harum eaque accusamus veritatis enim deserunt fugiat explicabo maiores dolorem incidunt dicta. Repudiandae explicabo voluptates, adipisci accusamus repellat architecto quidem veniam doloremque praesentium incidunt. Sunt quam, assumenda pariatur qui necessitatibus eaque error temporibus doloribus repellat saepe fugiat quis architecto sed perferendis nulla animi quaerat soluta, omnis vitae, vel laudantium earum.
+                    </div>
+				<h3>Relationships with NPCs</h3>
+					<div>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est sint molestiae natus animi minus ab dicta dolorem rerum quis iste temporibus reiciendis ullam debitis laborum, deleniti itaque possimus odio. Recusandae autem molestias error, illo nam dolore. Fuga voluptate eveniet necessitatibus sed quaerat blanditiis, delectus nobis optio odit autem. Temporibus voluptatibus eveniet voluptatem sunt tenetur officiis doloremque ipsam nemo illo quasi ullam optio totam nihil fuga porro, corporis quis, itaque est ab iste! Exercitationem odit qui fugit quod, repudiandae quaerat maiores maxime consectetur ad minus numquam velit iste rerum earum voluptas fugiat illo. Doloribus incidunt quo corrupti numquam harum error. Dignissimos?
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MULTIPLE CHARACTERS -->
+	<div class="infobox">
+		<button type="button" class="collapsible"><h2>Playing Multiple Characters</h2></button>
+		<div class="collapseDescription">
+			Much like the roleplay section, this covers how to manage relations, except with your characters, should you have multiple. As well, this covers how to optimize the amount of time it takes to play all these characters!
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>Relationships</h3>
+					<div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error corporis a repellendus illo cumque numquam architecto, natus perspiciatis dignissimos. Dicta aperiam sit, qui eaque vel harum cupiditate consequuntur ipsum corporis inventore ab ratione iste amet eligendi. Eum aperiam tenetur est nobis explicabo velit, aliquid repudiandae, ipsum architecto, quo earum deserunt eos fuga sit. Neque nemo veniam debitis nisi officiis hic. Error labore, doloremque magni quo explicabo nostrum distinctio! Culpa reprehenderit atque doloribus vitae ullam tempore. Unde facere beatae nobis laboriosam perspiciatis officiis, illo labore sequi culpa sint repellendus? Architecto porro veniam sequi et hic perferendis repellat voluptas quidem iusto itaque.
+                    </div>
+				<h3>Playing</h3>
+					<div>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quas. Nesciunt quod dolorem at inventore eligendi hic, voluptas itaque obcaecati error. Nisi sunt magnam sequi. Sapiente nulla quas minus delectus, rerum eos? Similique, labore eius maxime doloribus quam impedit aliquam blanditiis eum aspernatur excepturi neque fugit hic! Dolores sunt animi aut labore nulla voluptate necessitatibus nostrum veniam, repellendus sequi quis dolorem quod eos pariatur deserunt ad omnis accusantium! Illo, numquam! Et recusandae consequatur quasi nesciunt repudiandae ratione quo aliquam sequi sint voluptate labore in eaque minima explicabo nam excepturi maiores qui omnis, ut impedit doloribus voluptatum reprehenderit. Nisi, accusamus dolorem.
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+		
+	<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+	<script src="js/general.js"></script>
+</body>
+</html>

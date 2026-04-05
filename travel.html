@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Into the Wilds</title>
+
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="css/cssdarkmode.css">
+</head>
+<body>
+	<div id="header"></div>
+
+	<!-- BIOME SELECTION -->
+	<div id="biomeSelection">
+		<button type="button" class="biomeButton" id="plains">
+			<img src="img/plainsButton.jpg" alt="plainsButton" width="50px" height="50px">
+			<br>
+			Plains
+		</button>
+		<button type="button" class="biomeButton" id="arctic">
+			<img src="img/arcticButton.jpeg" alt="arcticButton" width="50px" height="50px">
+			<br>
+			Arctic
+		</button>
+		<button type="button" class="biomeButton" id="jungle">
+			<img src="img/jungleButton.webp" alt="jungleButton" width="50px" height="50px">
+			<br>
+			Jungle
+		</button>
+	</div>
+
+	<!-- BEFORE THE JOURNEY -->
+	<div class="infobox">
+		<button type="button" class="collapsible"><h2>Before the Journey</h2></button>
+		<div class="collapseDescription">
+			Before the journey can start, one must determine where they're heading to, what dangers may lay along the way, and how they can get there.
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h2>Where?</h2>
+				<div>
+					First and foremost, where are the players heading? How far are they going?
+					<br>
+					This determines how much the party will encounter along the way, what hurdles they'll have to head through, and when they might be able to pit-stop at some civilization or other stronghold.
+					<br>
+					Inspired by Pointy Hat's <a href="https://youtu.be/vM18P0WKGFA?si=LkuHdKGbX4Ha3S0L" target="_blank">Travelling Event System,</a> this system counts distance in general distances, being close, far, and very far, which can be determined in terms of distance, danger and importance. Note, if the destination is close enough or peaceful enough, you may not need to run this system, such as walking across the city, or a ferry ride, just simply describe it away, and perhaps let the players roleplay what its like across the ride. Cycles, inspired by <a href="https://www.dndbeyond.com/sources/dnd/dmg-2024?srsltid=AfmBOoqXxrPVVnbZCThlHup2Mr9_fkDgFecfq0LhR9Bsn5EhK2-hPUL-" target="_blank">the Dungeon Master's Guide</a>, determine the steps the party must go through to reach the steps, as will be covered later in this page.
+					<div class="infobox">
+						<table border="1" class="table">
+							<tr>
+								<th>Distance</th>
+								<th>Example(s)</th>
+								<th>Amount of Cycles</th>
+							</tr>
+							<tr>
+								<td>Close</td>
+								<td>A supply run to a nearby town, trekking to a popular shrine up a mountain.</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Far</td>
+								<td>A supply run to a major city, a temple located high in the mountains.</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Very Far</td>
+								<td>Transporting a rare item to nobility, an ancient dungeon once inhabited by monks - said to hold great treasures.</td>
+								<td>3</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<h2>How?</h2>
+				<div>
+					The second part of travelling is how the party is going to get where they need to go, will they need to procure extra matierials before they head to their destination, such as something to resist the heat, a person to navigate them, a ship, etc?
+					<br>
+					If the players get something to only help them on their way, perhaps that could reduce the time it takes, or the danger the route would normally impose, such as a trek across the dessert becoming a Close distance instead of a Very Far distance because they rented a sand buggy.
+					<br>
+					If the players do not bring the matierials they need, how does that affect their survival? Of course, let them know the difficulty before throwing them to the wolves, but if they go through with it, let them feel their choice, whether that be through difficulty or time. For example, if the players do not get a guide to cross through the dessert, perhaps they run across a sandworm den, when the guide would've known to avoid it. As well, lets say the players didn't buy a map to cross through the jungle, and ended up wasting a bunch of time getting lost, well, that gave the BBEG or the environment itself to progress in the party's absence, turning the town they were heading to into a zombie town.
+					<br><br>
+					As well, this <strong>doesn't</strong> have to be constant, such as travelling between towns, you could instead only need this during more intense travels, such as crossing a desert, consider:
+					<br>
+					"The Sands (the desert the players have to cross) is a challenge even to those used to the heat, if you're going to cross it, you're going to need the correct supplies to do so." This way, you can even make it a quest to gather the nessesary supplies to cross to where your BBEG may be hiding, raising the stakes, and giving the players a question of "if we get the supplies, will we have enough time before the BBEG (blows up that town?)"
+					<br><br>
+					<div class="infobox">
+						<button type="button" class="collapsible subCollapsible"><h2>Vehicle Stats</h2></button>
+						<div class="collapseDescription">
+							More info on vehicles, land, water, and air!
+						</div>
+						<div class="collapseContent">
+							<div class="collapseInterior">
+								<h3>Land Vehicles</h3>
+								<table border="1" class="table">
+									<tr>
+										<th>Vehicle Name</th>
+										<th>Capacity</th>
+										<th>Cost</th>
+									</tr>
+									<tr>
+										<td>Cart</td>
+										<td>*1</td>
+										<td>15gp</td>
+									</tr>
+									<tr>
+										<td>Sled</td>
+										<td>*1</td>
+										<td>20gp</td>
+									</tr>
+									<tr>
+										<td>Wagon</td>
+										<td>*4</td>
+										<td>35gp</td>
+									</tr>
+									<tr>
+										<td>Carriage</td>
+										<td>*6</td>
+										<td>100gp</td>
+									</tr>
+									<tr>
+										<td>Chariot</td>
+										<td>*6</td>
+										<td>350gp</td>
+									</tr>
+								</table>
+								<h3>Water Vehicles</h3>
+								<table border="1" class="table">
+									<tr>
+										<th>Vehicle Name</th>
+										<th>Speed</th>
+										<th>Capacity</th>
+										<th>Cost</th>
+									</tr>
+									<tr>
+										<td>Rowboat</td>
+										<td>1.5mph</td>
+										<td>4</td>
+										<td>50gp</td>
+									</tr>
+									<tr>
+										<td>Keelboat</td>
+										<td>1mph</td>
+										<td>7</td>
+										<td>3,000gp</td>
+									</tr>
+									<tr>
+										<td>Sailing Ship</td>
+										<td>2mph</td>
+										<td>40</td>
+										<td>10,000gp</td>
+									</tr>
+									<tr>
+										<td>Warship</td>
+										<td>2.5mph</td>
+										<td>120</td>
+										<td>25,000gp</td>
+									</tr>
+								</table>
+								<h3>Air Vehicles</h3>
+								<table border="1" class="table">
+									<tr>
+										<th>Vehicle Name</th>
+										<th>Speed</th>
+										<th>Capacity</th>
+										<th>Cost</th>
+									</tr>
+									<tr>
+										<td>Airship</td>
+										<td>8mph</td>
+										<td>30</td>
+										<td>40,000gp</td>
+									</tr>
+								</table>
+								<div class="annot">From <a href="https://www.dndbeyond.com/sources/dnd/phb-2024?srsltid=AfmBOooWYQB7_JDApy1T4h7_sDBRN-lRfot8JMvQJGwHS3xLE4BdrxCg" target="_blank">the Player's Handbook</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2>What?</h2>
+				<div>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum omnis, distinctio non sunt porro quos ullam dolorum error nam neque ipsum quasi exercitationem magnam totam labore doloribus vitae inventore laborum modi excepturi id harum nisi illum aut? Alias eum quo sunt hic, ad consectetur odit vel repudiandae, labore voluptates eos voluptatem, nemo nobis omnis minima rem accusantium earum dolore dolorum. Nihil autem cum dignissimos beatae maxime perspiciatis eum ipsa ab impedit velit! Maiores nam vitae cumque ipsam harum, expedita ullam inventore deleniti nostrum quasi nesciunt magnam labore repellat corporis, sunt aliquid molestiae? Distinctio soluta nesciunt quam molestias quasi consectetur natus.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- LAYOUT -->
+	<div class="infobox">
+		<h2>Journey Cycles</h2>
+
+		A journey with this system takes place in cycles, where your players get to explore, problem-solve, potentially battle, and roleplay.
+		<br><br>
+		A typical journey cycle is resolved in this order:
+
+		<div class="infobox" style="background-color: #151535;">
+			<ol>
+				<li>Environment</li>
+				<li>Navigate</li>
+				<li>Encounter</li>
+				<li>Downtime</li>
+			</ol>
+		</div>
+	</div>
+
+	<!-- ENVIRONMENT -->
+	<div class="infobox">
+		<button type="button" class="collapsible"><h2>Environment</h2></button>
+		<div class="collapseDescription">
+			The first part to figure out a travel cycle is what the environment is like: what biome you're travelling through, the weather for the day, and any other hazards that could impede the journey, as well as give it a mood.
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>Terrain</h3>
+				<div>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, vel!
+				</div>
+					<div class="infobox">
+						<button type="button" class="collapsible subCollapsible"><h3>Biomes</h3></button>
+						<div class="collapseDescription">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, reprehenderit.
+						</div>
+						<div class="collapseContent">
+							<div class="collapseInterior">
+								Biomes decide many things, so it's important that you understand how to go between them to change up what the party is used to.
+									<br>
+								Each biome can be represented as circles of influence, the characters have to travel through the radius to move from one biome to the other.
+								
+								<h2>Region Table</h2>
+								<button type="button" class="tableButton">Generate Random</button> <div class="tableText"></div>
+								<table border="1" class="table">
+									<tr>
+										<th>
+											d12
+										</th>
+										<th>
+											Description
+										</th>
+										<th>
+											Biome
+										</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Grassland</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Ocean</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Desert</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Farmland</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Arctic</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Forest</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Swamp</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Woodland</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Hills</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Wastelands</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Jungle</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+										</td>
+										<td>Mountains</td>
+									</tr>
+								</table>
+
+								<h4>Biome Specifics</h4>
+								<div class="infobox">
+									<div class="biomeContent none">
+										Please select a biome using the buttons in the top right!
+									</div>
+									<div class="biomeContent plains">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nesciunt similique quia dolor. Voluptates deserunt tempora vel quisquam ex inventore consequuntur vitae hic doloremque veniam repudiandae, sint eius! Facere officiis quidem porro mollitia in. Labore quidem eos laboriosam beatae minima?
+									</div>
+									<div class="biomeContent arctic">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto, ipsa quisquam magnam ipsum odit necessitatibus tempora fugit deleniti perspiciatis ducimus, quam reprehenderit sunt temporibus laboriosam labore molestias magni voluptatem, sint eum quae. Tempore, fugit natus? Fugiat facilis culpa consectetur.
+									</div>
+									<div class="biomeContent jungle">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid id laudantium corporis maxime temporibus nisi suscipit nulla dolorum assumenda. Eligendi aperiam culpa maiores voluptatum nesciunt corrupti at laborum laudantium rem. Atque, pariatur ut? Maxime officiis ad eaque consectetur neque nemo!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<h3>Hazards</h3>
+				<div>
+					Many hazards can impede the player's journey through an area, particularly weather. These hazards can be strewn through many miles or stay for only one cycle. <br>For example, a desert may stay hot throughout its entire area, or a badlands could have many chasms. In contrast, a heavy storm may stay only for a day.
+				</div>
+					<div class="infobox">
+						<button type="button" class="collapsible subCollapsible"><h3>Weather</h3></button>
+						<div class="collapseDescription">
+							The rain battered upon the tops of your tents, the fire wavering in the storm, the stagnant scent within the leaves above being brought out in their entirety by the rain's nagging.
+								<br>
+							The sands blow by in the grinding wind, even beneath the wraps and protection over your body, the sand finds a way to slip between.
+						</div>
+						<div class="collapseContent">
+							<div class="collapseInterior">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, quisquam.
+							</div>
+						</div>
+					</div>
+					<h4>Environmental Effects</h4>
+						<div>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus doloremque pariatur, repudiandae delectus inventore ex explicabo earum itaque commodi non, totam, nihil adipisci saepe exercitationem quis sint sapiente. Quam dolorem repellendus nihil rerum architecto inventore eum rem laudantium sint iure magnam quaerat consectetur hic, tempora neque asperiores itaque illum eos!
+						</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVIGATE -->
+	<div class="infobox">
+		<button type="button" class="collapsible" style="z-index: 2;"><h2>Navigate</h2></button>
+		<div class="collapseDescription">
+			When navigating towards their goal, a map can only give limited information, and as such the players must find their own path towards their goals. This means that they might veer off course on accident, or perhaps they're presented with a choice of where they can go, giving them agency and telling you what mood they'd rather go for.
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>Narrating the Travel</h3>
+				<div>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ab facilis natus iusto laboriosam saepe libero est quis. Qui sapiente nisi fugit blanditiis voluptatum neque id quae dolore recusandae soluta ea facere reiciendis quas consequuntur earum voluptas repudiandae aut inventore dolorem ullam culpa, rerum delectus. Dolore incidunt id nobis a vero! Ullam pariatur ipsum maiores in est, possimus expedita quis necessitatibus ratione facere architecto! Enim nisi reiciendis asperiores voluptatibus molestiae optio, natus id atque nemo totam autem cumque, quaerat eum itaque dolores rem, at esse. Consequuntur magni eos, aperiam, nobis, ad nulla nemo qui eum temporibus amet atque ipsum quae!
+				</div>
+
+				<h3>Forks in the Road</h3>
+				<div>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quasi nobis fugiat, deserunt voluptate nihil beatae tempore assumenda! Autem possimus recusandae ducimus vitae explicabo iusto libero ullam nihil molestias reiciendis. Saepe totam deserunt quae sequi, veniam impedit suscipit nam tempore in beatae exercitationem nesciunt laboriosam a, hic architecto, magnam minus. Harum nobis nesciunt cumque voluptatum, perferendis maiores voluptate aliquid quibusdam impedit optio. Recusandae, vero, asperiores quasi quae autem voluptatum nisi natus esse quos ipsum quia soluta! Totam, fugit explicabo excepturi inventore aliquid sapiente facere nam in tempora similique officia aperiam praesentium, vel tenetur et tempore beatae commodi iure ratione veniam.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ENCOUNTER -->
+	<div class="infobox">
+		<button type="button" class="collapsible" style="z-index: 2;"><h2>Encounter</h2></button>
+		<div class="collapseDescription">
+			A story needs beats to keep the viewer's hearts pumping, and as such travelling must do so as well. These can be combat / roleplay encounters, environments, tewists and setbacks, or simply setting the mood of the travel.
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>Wonder</h3>
+					<div>Wonder is a large part of D&D, and when travel is commonly touted as being boring, then add some wonder back into it, Frieren style!</div>
+					<h4>Mood</h4>
+						<div>Set the mood of a certain part of the journet, one part that stands out, that gives a spark to the travel. For example, the creaking of splintery branches amidst the choking fog.</div>
+					<h4>Small Jobs</h4>
+						<div>An NPC needing a simple job can give your players a form of getting gold and make them feel like the good guys for helping out a stranger, or just give them someone to talk to.</div>
+					<h4>Environments</h4>
+						<div>Describing the environment immerses your players in what they're going through, it may prompt them to take up their shields when they feel threatened by the very trees, or to take in the wonder of the plantlife.</div>
+				<h3>Random Encounters</h3>
+					<div>Random encounters are easy ways to generate story beats for you, but there are times where you should slow down on them. I'd suggest 2 combat / environment encounters, with a roleplay encounter in the middle at the max, and if there's a large gap between where the players start and where they're going, give them towns in between for them to refill resources and do other things which have more tangibility within a defined location instead of a random shack on the road, perhaps getting other quests on their way.</div>
+					<h4>When to Use / Importance</h4>
+						<div>Although combat encounters can be fun, a random wolf encounter every few miles will drain just about any party; when the combat simply doesn't mean anything, why do it in the first place? The players have somewhere they need to go , where they want to be, so don't cram unnescesary encounters.</div>
+					<h4>Combat Encounters</h4>
+						<div>When things get heated, what are the enemies actually thinking? What are their goals? To what extent will they pursue these goals?</div>
+					<h4>Roleplay Encounters</h4>
+						<div>People like talking, so giving them an oppurtunity to do so is always pleasant to keep things light.</div>
+					<h4>Environment Encounters</h4>
+						<div>Creatures don't have to be the only things impeding the players, the world itself will gladly give them a reason to fear.</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- DOWNTIME -->
+	<div class="infobox">
+		<button type="button" class="collapsible" style="z-index: 2;"><h2>Downtime</h2></button>
+		<div class="collapseDescription">
+			Supplies are often a very iffy part when it comes to almost every aspect of D&D due to their unnescesarry bloat, however, should your players (key point, your players!) want to handle supplies, there are some suggestions I can make, for instance, when on the road, instead of having the players go through all their things and individually work things out, you handle the supply drain yourself and report that back to the players, this way you may simply do everything in one quick motion; or, if they do not want to deal with that every time the have to travel, you may simply allow the players to describe some of these scenes, such as cooking food they gathered at the campfire.
+		</div>
+		<div class="collapseContent">
+			<div class="collapseInterior">
+				<h3>Survival</h3>
+					<div>Survivial doesn't need to mean adding a bunch of bloat mechanics, it can simply be the players playing their characters, what they do and add in between encounters.</div>
+				<h4>Resources</h4>
+					<div>Resources are more than rations, it can be a moment where your players can create and add to their character in ways not normally be allowed simply by levelling up. This can be crafting items, researching, hunting, getting a pet, or even improving their relations with NPCs.</div>
+				<h3>Campfire Scenes</h3>
+					<div>A marvellous question to ask your players is simply "what are your characters doing in this moment / as they are travelling?" and then go around the table, letting them decide what their characters would do (this also works many other times in the game!) This isn't necessarily mechanical, it can be purely decorative, but this allows them to play their character without going through the mechanics of base D&D.</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- TESTING GROUNDS -->
+	<div style="display: none;">
+		<h1>TESTING GROUNDS</h1>
+		<div class="flexcontainer">
+			<div class="infobox">
+				<button type="button" class="collapsible"><h2>Collapsible option</h2></button>
+
+				<div class="collapseDescription">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolore.
+				</div>
+
+				<div class="collapseContent">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor natus reiciendis minima magni <i><a>placeat</a></i> soluta ad ex eaque eos esse, quia nihil neque fuga ratione dicta maiores, molestiae illo quis.</p>
+					<div class="infobox">
+						<div class="biomeContent plains">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus cupiditate assumenda dolores quibusdam ipsam soluta ratione, suscipit mollitia quisquam exercitationem vitae quo blanditiis error recusandae, eius neque, sed vero.
+						</div>
+						<div class="biomeContent arctic">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iusto et illo facere repellendus eaque porro tenetur aliquam corrupti, nam eligendi voluptate accusantium dolores vero quidem exercitationem officia recusandae?
+						</div>
+						<div class="biomeContent jungle">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="infobox">
+				<button type="button" class="collapsible"><h2>Collapsible option</h2></button>
+
+				<div class="collapseDescription">
+
+				</div>
+
+				<div class="collapseContent">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab enim sint facere non. Officiis tenetur fugit, libero inventore, quia laudantium ipsam corrupti eius debitis assumenda ducimus exercitationem repudiandae, dolor ex.</p>
+					<button type="button" class="tableButton">Generate Random</button> <div class="tableText"></div>
+					<table border="1" class="table">
+						<tr>
+							<th>
+								A
+							</th>
+							<th>
+								B
+							</th>
+							<th>
+								C
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1
+							</td>
+							<td>
+								2
+							</td>
+							<td>
+								3
+							</td>
+						</tr>
+						<tr>
+							<td>
+								a
+							</td>
+							<td>
+								b
+							</td>
+							<td>
+								c
+							</td>
+						</tr>
+						<tr>
+							<td>
+								4
+							</td>
+							<td>
+								5
+							</td>
+							<td>
+								6
+							</td>
+						</tr>
+					</table>
+					
+					<button type="button" class="collapsible">Extra</button>
+					<div class="collapseDescription">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illo.
+					</div>
+					<div class="collapseContent">
+						<div class="collapseInterior">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium, corporis quos cupiditate provident vel dolore quo? Voluptates quo magnam nihil illum optio eveniet quos, vel itaque ut nulla voluptas.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Empty button to fix the biomes -->
+	<div class="biomeButton" id="none" style="display: none;"></div>
+
+	<div id="footer"></div>
+		
+	<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+	<script src="js/general.js"></script>
+</body>
+</html>
