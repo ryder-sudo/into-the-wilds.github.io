@@ -168,7 +168,7 @@ function initHeaderFooter() {
     header.innerHTML = `<div class="header">
         <div class="headerContainer">
             <div style="flex-grow: 1;">
-                <h1 class="title" style="background-color: #151535; border: solid 1px white;"><a href="mainpage.html"><p style="display: inline; font-size: 50px;">Into the Wilds:</p><br>A Compendium for Solo<br>TTRPG Play & Exploration</a></h1> \
+                <h1 class="title" style="background-color: #151535; border: solid 1px white;"><a href="index.html"><p style="display: inline; font-size: 50px;">Into the Wilds:</p><br>A Compendium for Solo<br>TTRPG Play & Exploration</a></h1> \
             </div>
             <div style="flex-grow:3;">
                 <div class="navbar" style="flex-direction: column;">
